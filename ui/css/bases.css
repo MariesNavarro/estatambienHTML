@@ -1,0 +1,75 @@
+@font-face { font-family: 'SFPRegular'; src: url('../fonts/sfp-regular.eot'); src: url('../fonts/sfp-regular?#iefix') format('embedded-opentype'), url('../fonts/sfp-regular.woff2') format('woff2'), url('../fonts/sfp-regular.woff') format('woff'), url('../fonts/sfp-regular.ttf') format('truetype'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'SFPBold'; src: url('../fonts/sfp-bold.eot'); src: url('../fonts/sfp-bold?#iefix') format('embedded-opentype'), url('../fonts/sfp-bold.woff2') format('woff2'), url('../fonts/sfp-bold.woff') format('woff'), url('../fonts/sfp-bold.ttf') format('truetype'); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'SFPBlack'; src: url('../fonts/sfp-black.eot'); src: url('../fonts/sfp-black?#iefix') format('embedded-opentype'), url('../fonts/sfp-black.woff2') format('woff2'), url('../fonts/sfp-black.woff') format('woff'), url('../fonts/sfp-black.ttf') format('truetype'); font-weight: bold; font-style: normal; }
+#bases{ padding-bottom: 100px; }
+#bases>h1,#bases>h2{
+  display: block;
+  position: relative;
+  font-family: 'SFPBold', serif;
+  color: #0D4671;
+  text-transform: uppercase;
+  text-align: center;
+}
+#bases>h1{
+  font-size:1.5rem;
+  margin: 0 auto 10px auto;
+  width: 90%;
+  line-height: 1.1;
+  border-top:60px solid #fff;
+}
+#bases>h2{
+  font-size:1.2rem;
+}
+#bases>p{
+  text-align: center;
+  position: relative;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 800px;
+}
+#bases>p>span{
+  color: #0D4671;
+}
+#bases>ul{
+  font-size: 0.9rem;
+  position: relative;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+}
+#bases>ul>li{
+  margin: 5px auto;
+  line-height: 20px;
+}
+#bases>ul.bullets>li::before{
+  display: inline-block;
+  content: "";
+  background: #0D4671;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  line-height: 20px;
+  margin-right: 5px;
+}
+#bases>a{
+  display: block;
+  font-family: 'SFPRegular', serif;
+  font-size: 1.1rem;
+  letter-spacing: 1.5;
+  text-transform: uppercase;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 20px;
+  background: #0D4671;
+  color: #FFF;
+  margin: 10px auto;
+}
+#bases>a:hover{
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  transform: scale(1.03);
+}
