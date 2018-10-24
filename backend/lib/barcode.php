@@ -114,7 +114,7 @@ function barcode( $filepath="", $text="0", $size="20", $orientation="horizontal"
 	}
 
 	$image = imagecreate($img_width, $img_height + $text_height);
-	$black = imagecolorallocate ($image, 0, 0, 0);
+	$black = imagecolorallocate ($image, 24, 72, 149);
 	$white = imagecolorallocate ($image, 255, 255, 255);
 
 	imagefill( $image, 0, 0, $white );
@@ -140,25 +140,29 @@ function barcode( $filepath="", $text="0", $size="20", $orientation="horizontal"
 		//imagepng($image,$filepath);
 		//
 		//$stamp = imagecreatefrompng('./img/'.$nombre.'mob.png');
-		$im = imagecreatefromjpeg('ui/img/promoMob.jpg');
+		$im = imagecreatefrompng('ui/img/promoMob.png');
+		imagealphablending($im, false);
+    imagesavealpha($im,true);
 		$marge_right = 180;
 		$marge_bottom = 180;
 		$sx = imagesx($image);
 		$sy = imagesy($image);
 		imagecopy($im, $image, imagesx($im) - $sx - $marge_right, imagesy($im) - $sy - $marge_bottom, 0, 0, imagesx($image), imagesy($image));
-		$newfilemob='ui/img/promoMob-'.$text.'.jpg';
-		imagejpeg($im,$newfilemob);
+		$newfilemob='ui/img/temp/promoMob-'.$text.'.png';
+		imagepng($im,$newfilemob);
 
 
 		//$stamp = imagecreatefrompng('./img/'.$nombre.'.png');
-		$im2 = imagecreatefromjpeg('ui/img/promoDesk.jpg');
+		$im2 = imagecreatefrompng('ui/img/promoDesk.png');
+		imagealphablending($im2, false);
+    imagesavealpha($im2,true);
 		$marge_right2 = 162;
 		$marge_bottom2 = 75;
 		$sx2 = imagesx($image);
 		$sy2 = imagesy($image);
 		imagecopy($im2, $image, imagesx($im2) - $sx2 - $marge_right2, imagesy($im2) - $sy2 - $marge_bottom2, 0, 0, imagesx($image), imagesy($image));
-		$newfile='ui/img/promoDesk-'.$text.'.jpg';
-		imagejpeg($im2,$newfile);
+		$newfile='ui/img/temp/promoDesk-'.$text.'.png';
+		imagepng($im2,$newfile);
 		//imagedestroy($im);
 		//return $newfilemob;
 		//header('Content-type: image/phg');
