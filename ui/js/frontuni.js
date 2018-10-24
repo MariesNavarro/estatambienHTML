@@ -1661,7 +1661,7 @@ function loadingCoupon(d){
             toDataURL(arch, function(dataUrl) {
 
                var dow=_("#download");
-               dow.download="cupon.jpg"
+               dow.download="cupon.png"
 
                dow.href=arch;
                dow.target='_blank';

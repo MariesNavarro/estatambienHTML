@@ -19,7 +19,9 @@ ol, ul {list-style: none; }
 .trans7{-webkit-transition: all 0.7s ease-out; -moz-transition: all 0.7s ease-out; -ms-transition: all 0.7s ease-out; -o-transition: all 0.7s ease-out; transition: all 0.7s ease-out }
 .flexDisplay{display: -webkit-box; display: -ms-flexbox; display: -webkit-flex; display: flex }
 .dislplayNone{ display: none }
-.standarWidth{ width: 100vw; min-width: 250px; }
+.standarWidth{
+  background-image: url('../img/background-pepsi-legacy.jpg') !important;
+     }
 #index{background: #ff4d00;}
 #bases{background: #ffffff;}
 body{
@@ -265,7 +267,7 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
   line-height: 40px;
   text-align: center;
   border-radius: 20px;
-  color: #ff4d00;
+  color: #184895;
   background: rgba(255,255,255,1);
   left: calc(50% - 100px);
 }

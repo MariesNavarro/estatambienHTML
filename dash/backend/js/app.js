@@ -28,14 +28,14 @@ function ingresar() {
   param1=$('#username')[0].value;
   param2=$('#password')[0].value;
   param3=MetodoEnum.Ingresar;
-  param4=1;   // promo
+  param4=2;   // promo
   actualizadiv();
 }
 function salir() {
   param1='';
   param2='';
   param3=MetodoEnum.Salir;
-  param4=1;  // promo
+  param4=2;  // promo
   actualizadiv();
 }
 function actualizadiv(){
@@ -62,7 +62,7 @@ function actualizaDatos(){
   param1='';
   param2='';
   param3=MetodoEnum.Datos;
-  param4=1;  // promo
+  param4=2;  // promo
   var dataString = 'actualizaDatos param1=' + param1 + '&param2=' + param2+'&param3=' + param3+'&param4=' + param4;
   console.log(dataString);
   $.ajax({
@@ -76,6 +76,7 @@ function actualizaDatos(){
       $("#cupDisponibles").text(data.split(";")[2]); // Cupones Disponibles
       $("#cupEntregadosPorc").text(data.split(";")[3]); // Cupones entregados %
       $("#cupDisponiblesPorc").text(data.split(";")[4]); // Cupones disponibles %
+      $("#cupDisponibles").css({'color':''+data.split(";")[5]+''})
       $("#cupUltimo").text(data.split(";")[6]); // Cupones último
       x=60;
     }

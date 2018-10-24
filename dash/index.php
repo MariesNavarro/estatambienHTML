@@ -11,10 +11,10 @@ Sigue sudando v2
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="google" content="notranslate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=1.0000, user-scalable=no">
-    <title>Sigue Sudando | Gatorade ®</title>
+    <title>Esta También Es Tu Pepsi | Pepsi México ®</title>
     <link rel="stylesheet" href="ui/css/fonts.css">
     <link rel="stylesheet" href="ui/css/master.css">
-    <link rel="prefetch" href="ui/img/logotipo-gatorade.svg">
+    <link rel="prefetch" href="ui/img/logo-pepsi.svg">
     <link rel="canonical" href="www.siguesudando.com">
     <link rel="apple-touch-icon" sizes="180x180" href="ui/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="ui/fav/favicon-32x32.png">
@@ -37,7 +37,7 @@ Sigue sudando v2
     <nav id="logo" class="flexDisplay trans7" style="opacity: 1;">
       <h1>
         <a href="index.php"> <!-- CAMBIAR!!!!! -->
-          <img src="ui/img/logotipo-gatorade.svg" alt="Gatorade ®" title="Gatorade ®" width="60px">
+          <img src="ui/img/logo-pepsi.svg" alt="PEPSI ®" title="PEPSI ®" width="60px">
         </a>
       </h1>
       <p id="stateText"></p>
