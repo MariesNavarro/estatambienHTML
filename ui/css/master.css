@@ -76,12 +76,15 @@ footer>a>span{ display: none }
 nav>p{ text-transform: uppercase; font-size: 0.7rem; }
 @media (min-width: 350px){ nav>p{ text-transform: uppercase; font-size: 0.9rem; } }
 #carrusel, #generandocupon, #cupon, .mensaje{
+  background: #fff;
+  position: fixed;
+  height: 100vh;
+}
+.pepsiback{
   background-image: url('ui/img/background-pepsi-legacy.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
-  height: 100vh;
 }
 #carrusel{  z-index: 5 }
 #generandocupon{ z-index: 4}
@@ -111,10 +114,10 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
   position: absolute;
   top: 0;
   width: 100%;
-  height: calc(100% - 100px);
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
 }
 .producto>.wrap>.remove{ display: none !important; }
 #producto1>.wrap{ opacity: 0; }
