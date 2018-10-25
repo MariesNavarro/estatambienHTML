@@ -100,16 +100,13 @@ function login($user,$pass,$promo,&$error)
 //  $passdecode=base64_decode($passbd);
   if($passdecode==$pass&&$passbd!='')
   {
-    $salida='<div id="disclaimerIndex" class="">
-             <div id="content">
-              <section id="disclaimer">'.createhtml($link,$promo).'
-              <div id="interface" class="flexDisplay">
-                <a role="button" class="buttonG trans7 btnActualizar"   onclick="actualizaDatos()">Actualizar <span id="timer">60</span></a>
-                <a role="button" class="buttonG trans7 btnSalir"   onclick="salir()">Salir</a>
+    $salida='
+              <div id="interface">'.createhtml($link,$promo).'
+                <a role="button" class="btnActualizar" onclick="actualizaDatos()">Actualizar <span id="timer">60</span></a>
+                <a role="button" class="btnSalir" onclick="salir()">Salir</a>
               </div>
-             </section>
-             </div>
-            </div>';
+            </div>
+            ';
     // $salida='
     //     <div id="interface" class="flexDisplay">
     //         <a role="button"onclick="actualizadiv();"><p>Actualizar</p><span class="trans7"></span> </a>
@@ -126,16 +123,22 @@ function login($user,$pass,$promo,&$error)
 
 }
 function loginhtml($error) {
-     $salida='<div id="disclaimerIndex" class="flexDisplay back_word">
-    <div id="content">
-      <section id="disclaimer">
-        <p style="font-size: 1.6rem;  color: white;">Usuario:</p>
-        <input name="username" type="text" id="username" required  style="font-size: 1.3rem;font-weight: 300;">
-        <p style="font-size: 1.6rem;  margin-top: 20px; color: white;">Password:</p>
-        <input name="password" type="password" id="password" required style="font-size: 1.3rem;font-weight: 300;">
-        <div class="flexDisplay">
-          <a role="button" class="buttonG trans7"  style="margin-top: 60px;" onclick="ingresar()">Login</a>
-        </div>';
+     $salida='<section id="disclaimer">
+	<div>
+		<header>
+			<h2>Promoción</h2>
+			<h1>#EstaTambiénEsTuPepsi</h1>
+		</header>
+		<img src="../ui/img/lock.svg" width="70" height="70">
+		<div id="form">
+			<p>Ingresa tu usuario</p>
+			<input name="username" type="text" id="username" required>
+			<p>Ingresa tu contraseña</p>
+			<input name="password" type="password" id="password" required>
+			<a role="button"  onclick="ingresar()">Entrar</a>
+		</div>
+	</div>
+</section>';
         if($error)
        {
           $salida=$salida.'<span class="error">Usuario o contraseña incorrecta, vuelva a intentarlo.<span>';
@@ -171,18 +174,20 @@ function createhtml($link,$promo)
   if ($porc_disponibles >= 25 and $porc_disponibles < 40) { $color = "orange";}
 
   echo '
-<!-- Tab content -->
-<div id="Consolidados" class="tabcontent"  style="text-align: center;">
-  <p class="descPromo">'.$des_promo.'</p><br />
-  <p style="font-size: 1.9rem;margin-top: 20px;">Cupones</p><br />
-  <p id="cupEntregadosHoy" style="font-size: 4.6rem; font-weight: 300; margin-top: -15px;">'.number_format($cup_entregadoshoy, 0, '.', ',').'</p><br />
-  <p style="font-size: 15px; margin-top: -32px;color:black;">Entregados Hoy</p><br />
-  <p id="cupEntregados" style="font-size: 4.6rem; font-weight: 300; margin-top: -15px;">'.number_format($cup_entregados, 0, '.', ',').'</p><br />
-  <p id="cupEntregadosPorc" style="font-size: 15px; margin-top: -32px;color:black;">Total Entregados ('.number_format($porc_entregados, 2, '.', ',').'%)</p><br />
-  <p id="cupDisponibles" style="font-size: 4.6rem; font-weight: 300; margin-top: -15px;color: '.$color.';">'.number_format($cup_disponibles, 0, '.', ',').'</p><br />
-  <p id="cupDisponiblesPorc" style="font-size: 15px; margin-top: -32px;color:black;">Total Disponibles ('.number_format($porc_disponibles, 2, '.', ',').'%)</p><br />
-  <p style="font-size: 15px; margin-top: -5px;color:black;">Último cupón entregado el <span id="cupUltimo" style="color:white;">'.$cup_ultimo.'</span</p><br />
-</div>';
+  <div id="wrapDatos">
+  <div id="Consolidados" class="tabcontent">
+    <h1 class="descPromo">'.$des_promo.'</h1>
+    <h2>Cupones</h2>
+    <h3 id="cupEntregadosHoy">'.number_format($cup_entregadoshoy, 0, '.', ',').'</h3>
+    <h4>Entregados Hoy</h4>
+    <h3 id="cupEntregados">'.number_format($cup_entregados, 0, '.', ',').'</h3>
+    <h4 id="cupEntregadosPorc">Total Entregados ('.number_format($porc_entregados, 2, '.', ',').'%)</h4>
+    <h3 id="cupDisponibles" style="color: '.$color.';">'.number_format($cup_disponibles, 0, '.', ',').'</h3>
+    <h4 id="cupDisponiblesPorc">Total Disponibles ('.number_format($porc_disponibles, 2, '.', ',').'%)</h4>
+    <p >Último cupón entregado el <span>'.$cup_ultimo.'</span></p>
+    <span id="lineapunteada"></span>
+  </div>
+  ';
 }
 
   function  getDatos($promo) {
