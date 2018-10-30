@@ -113,14 +113,14 @@ function barcode( $filepath="", $text="0", $size="20", $orientation="horizontal"
 		$img_height = $code_length*$SizeFactor;
 	}
 
-	$image = imagecreate($img_width, $img_height + $text_height);
+	$image = imagecreate($img_width, ($img_height + $text_height)-40);
 	$black = imagecolorallocate ($image, 24, 72, 149);
 	$white = imagecolorallocate ($image, 255, 255, 255);
 
 	imagefill( $image, 0, 0, $white );
 			if ( $print ) {
 				//imagestring($image,5, 225, $img_height, $text, $black );
-				imagettftext ($image ,36 , 0 , 118 , $img_height , $black ,"ui/fonts/g-black.ttf" , $text );
+				imagettftext($image ,36 , 0 , 118 , $img_height-40 , $black ,"ui/fonts/sfp-black.ttf" , $text );
 			}
 
 
@@ -128,7 +128,7 @@ function barcode( $filepath="", $text="0", $size="20", $orientation="horizontal"
 	for ( $position = 1 ; $position <= strlen($code_string); $position++ ) {
 		$cur_size = $location + ( substr($code_string, ($position-1), 1) );
 		if ( strtolower($orientation) == "horizontal" ){
-			  imagefilledrectangle( $image, $location*$SizeFactor, 50, $cur_size*$SizeFactor, $img_height-50, ($position % 2 == 0 ? $white : $black) );
+			  imagefilledrectangle( $image, $location*$SizeFactor, 10, $cur_size*$SizeFactor, $img_height-90, ($position % 2 == 0 ? $white : $black) );
 		}
 
 		else
@@ -144,7 +144,7 @@ function barcode( $filepath="", $text="0", $size="20", $orientation="horizontal"
 		imagealphablending($im, false);
     imagesavealpha($im,true);
 		$marge_right = 180;
-		$marge_bottom = 180;
+		$marge_bottom = 210;
 		$sx = imagesx($image);
 		$sy = imagesy($image);
 		imagecopy($im, $image, imagesx($im) - $sx - $marge_right, imagesy($im) - $sy - $marge_bottom, 0, 0, imagesx($image), imagesy($image));
@@ -157,7 +157,7 @@ function barcode( $filepath="", $text="0", $size="20", $orientation="horizontal"
 		imagealphablending($im2, false);
     imagesavealpha($im2,true);
 		$marge_right2 = 162;
-		$marge_bottom2 = 75;
+		$marge_bottom2 = 90;
 		$sx2 = imagesx($image);
 		$sy2 = imagesy($image);
 		imagecopy($im2, $image, imagesx($im2) - $sx2 - $marge_right2, imagesy($im2) - $sy2 - $marge_bottom2, 0, 0, imagesx($image), imagesy($image));
