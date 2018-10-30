@@ -113,7 +113,7 @@ function barcode( $filepath="", $text="0", $size="20", $orientation="horizontal"
 		$img_height = $code_length*$SizeFactor;
 	}
 
-	$image = imagecreate($img_width, ($img_height + $text_height)-40);
+	$image = imagecreate($img_width, ($img_height + $text_height)-50);
 	$black = imagecolorallocate ($image, 24, 72, 149);
 	$white = imagecolorallocate ($image, 255, 255, 255);
 
@@ -156,8 +156,8 @@ function barcode( $filepath="", $text="0", $size="20", $orientation="horizontal"
 		$im2 = imagecreatefrompng('ui/img/promoDesk.png');
 		imagealphablending($im2, false);
     imagesavealpha($im2,true);
-		$marge_right2 = 162;
-		$marge_bottom2 = 90;
+		$marge_right2 = 130;
+		$marge_bottom2 = 95;
 		$sx2 = imagesx($image);
 		$sy2 = imagesy($image);
 		imagecopy($im2, $image, imagesx($im2) - $sx2 - $marge_right2, imagesy($im2) - $sy2 - $marge_bottom2, 0, 0, imagesx($image), imagesy($image));
