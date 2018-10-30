@@ -164,6 +164,12 @@ body{ position:relative }
     <meta name="keywords" content="Sigue Sudando, Hidratación, Hidratar, Ejercicio, Electrolitos, Energía, Gatorade, Promoción, Deporte, Football Energy, OXXO">
     <script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
     <script async src="analytics/gtag.min.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-128376347-1');
+    </script>
   </head>
   <body id="index" class="standarWidth">
     <div id="loading" class="flexDisplay standarWidth trans7">
@@ -292,6 +298,12 @@ body{ position:relative }
     <!-- SCRIPT -->
     <script src="ui/js/frontuni.js" charset="utf-8" defer></script>
     <script type="text/javascript">
+      var isrefer="<?PHP echo $_SERVER['HTTP_REFERER']; ?>";
+      if(isrefer=="")
+       {
+         //window.location.href = "http://facebook.com";
+       }
+      console.log("URLREFERER: <?PHP echo $_SERVER['HTTP_REFERER']; ?>");
       function changeBack(){
         var uno = document.getElementById('generandocupon');
         var dos = document.getElementById('cupon');
@@ -301,7 +313,7 @@ body{ position:relative }
         dos.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
         tres.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
         cuatro.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
-        console.log("Cambia back")
+        console.log("Cambia back");
       }
     </script>
   </body>
