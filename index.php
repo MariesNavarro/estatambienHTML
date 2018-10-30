@@ -188,7 +188,7 @@ body{ position:relative }
       <section id="producto1" class="producto flexDisplay trans7">
         <div class="wrap trans7"></div>
         <a role="button" id="buttonHome" class="buttonG scaleUpButtonInit">
-          <img src="ui/img/botoncupon.png" alt="">
+          <img src="ui/img/botoncupon.png" alt="" onclick="changeBack()">
         </a>
       </section>
     </div>
@@ -199,7 +199,7 @@ body{ position:relative }
         <div id="counter" class="flexDisplay">
           <svg viewBox="0 0 119.5 119.5"><path id="ccircleB" class="ccircle" d="M7.5,59.75a52.25,52.25 0 1,0 104.5,0a52.25,52.25 0 1,0 -104.5,0"/></svg>
           <svg viewBox="0 0 119.5 119.5"><path id="ccircleW" class="ccircle" d="M7.5,59.75a52.25,52.25 0 1,0 104.5,0a52.25,52.25 0 1,0 -104.5,0"/></svg>
-          <p>0</p>
+          <p style="color:#fff">0</p>
         </div>
       </section>
     </div>
@@ -259,16 +259,17 @@ body{ position:relative }
       <div class="flexDisplay">
         <img src="ui/img/logo-pepsi.svg" alt="Logotipo Pepsi ®" width="120" height="120">
         <p>
-          Ya tienes más <span>Gatorade<span>®</span></span> para seguir sudando
+          ¡Tu cupón de Pepsi ha sido guardado exitosamente!
+
         </p>
-        <p>
-          <span>#siguesudando<span>®</span></span>
+        <p style="display:block;width:100%;">
+          <span>#EstaTambiénEsTuPepsi<span>®</span></span>
         </p>
         <div id="social" class="flexDisplay socialWidth">
-          <a href="https://www.facebook.com/GatoradeMexico/" target="_blank">
+          <a href="https://www.youtube.com/user/PepsiMexicoOficial" target="_blank">
             <img src="ui/img/social/fb.svg" width="50" height="50">
           </a>
-          <a href="https://www.instagram.com/gatorademexico/" target="_blank">
+          <a href="https://twitter.com/PepsiMEX" target="_blank">
             <img src="ui/img/social/ig.svg" width="50" height="50">
           </a>
           <a class="whatsapp" href="whatsapp://send?text=https://siguesudando.com" data-action="share/whatsapp/share" style="display:none">
@@ -279,8 +280,9 @@ body{ position:relative }
     </div>
     <!-- FOOTER -->
     <footer id="footer" class="flexDisplay trans7">
-      <a class="flexDisplay trans3" href="terminos-condiciones.html">Consulta Bases, Términos y Condiciones</a>
-      <p><span>  |  </span>Hidrátate sanamente | ® Marca Registrada </p>
+      <p>Haz Ejercicio | </p>
+      <a class="flexDisplay trans3" href="terminos-condiciones.html">&nbsp;Consulta Bases, Términos y Condiciones&nbsp;</a>
+      <p>| ® Marca Registrada </p>
     </footer>
     <!-- PREVENT LANDSCAPE -->
     <div id="preventLandscape" class="dislplayNone">
@@ -289,5 +291,18 @@ body{ position:relative }
     </div>
     <!-- SCRIPT -->
     <script src="ui/js/frontuni.js" charset="utf-8" defer></script>
+    <script type="text/javascript">
+      function changeBack(){
+        var uno = document.getElementById('generandocupon');
+        var dos = document.getElementById('cupon');
+        var tres = document.getElementsByClassName('mensaje')[0];
+        var cuatro = document.getElementById('guardado');
+        uno.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
+        dos.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
+        tres.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
+        cuatro.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
+        console.log("Cambia back")
+      }
+    </script>
   </body>
 </html>
