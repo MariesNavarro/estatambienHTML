@@ -184,7 +184,7 @@ function createhtml($link,$promo)
     <h4 id="cupEntregadosPorc">Total Entregados ('.number_format($porc_entregados, 2, '.', ',').'%)</h4>
     <h3 id="cupDisponibles" style="color: '.$color.';">'.number_format($cup_disponibles, 0, '.', ',').'</h3>
     <h4 id="cupDisponiblesPorc">Total Disponibles ('.number_format($porc_disponibles, 2, '.', ',').'%)</h4>
-    <p >Último cupón entregado el <span>'.$cup_ultimo.'</span></p>
+    <p >Último cupón entregado el <span id="cupUltimo">'.$cup_ultimo.'</span></p>
     <span id="lineapunteada"></span>
   </div>
   ';
