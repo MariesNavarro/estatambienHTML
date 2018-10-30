@@ -259,7 +259,8 @@ body{ position:relative }
       <div class="flexDisplay">
         <img src="ui/img/logo-pepsi.svg" alt="Logotipo Pepsi ®" width="120" height="120">
         <p>
-          <span>¡Listo tu cupón de</span> <b>Pepsi®</b> ha sido guardado exitosamente!
+          ¡Tu cupón de Pepsi ha sido guardado exitosamente!
+
         </p>
         <p style="display:block;width:100%;">
           <span>#EstaTambiénEsTuPepsi<span>®</span></span>
