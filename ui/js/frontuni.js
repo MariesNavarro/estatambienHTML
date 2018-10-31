@@ -1488,7 +1488,7 @@ function initFront(){
   function animationSeqHome(){
     var seq = __(".frame"),
         menu = _("#menu"),
-        footer = _("#footer");
+        footer = _("#pepsilegal");
     seq[fpsHome].style.display = "none";
     seq[fpsHome].setAttribute("class", "remove");
     fpsHome--;
