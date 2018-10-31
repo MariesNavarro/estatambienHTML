@@ -21,7 +21,7 @@ nav{
   -ms-justify-content: space-between;
   -o-justify-content: space-between;
   justify-content: space-between;
-  opacity: 0;
+  /* opacity: 0; */
 }
 nav>p{ color: #fff; text-transform: uppercase; font-size: 0.7rem; }
 nav>h1{ display: block; }
@@ -117,6 +117,7 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-position: center; */
 }
 .producto>.wrap>.remove{ display: none !important; }
 #producto1>.wrap{ opacity: 0; }
@@ -135,26 +136,26 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
 }
 .scaleUpButtonInit{
   opacity: 0;
-  -webkit-transform: scale(0);
+  /* -webkit-transform: scale(0);
   -moz-transform: scale(0);
   -ms-transform: scale(0);
   -o-transform: scale(0);
-  transform: scale(0);
+  transform: scale(0); */
 }
 .scaleUpButtonDefault{
-  -webkit-transform: scale(1);
+  /* -webkit-transform: scale(1);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
-  transform: scale(1);
+  transform: scale(1); */
   opacity: 1;
 }
 .scaleUpButtonAnimation{
-  -webkit-animation: scaleUp 1s ease-out 0s forwards;
+  /* -webkit-animation: scaleUp 1s ease-out 0s forwards;
   -moz-animation: scaleUp 1s ease-out 0s forwards;
   -ms-animation: scaleUp 1s ease-out 0s forwards;
   -o-animation: scaleUp 1s ease-out 0s forwards;
-  animation: scaleUp 1s ease-out 0s forwards;
+  animation: scaleUp 1s ease-out 0s forwards; */
 }
 #carrusel>section>.buttonG{ bottom: 120px; }
 .buttonG:hover{
@@ -357,3 +358,49 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
   align-items: center;
 }
 #preventLandscape>p{ margin: 10px auto; }
+
+
+#pepsilegal{
+  color: #004C7A;
+  position: fixed;
+  left: 1vw;
+  bottom: 10px;
+  width: 98vw;
+  height: 40px;
+  z-index: 100;
+}
+#pepsilegal>p{
+  display: block;
+  text-align: right;
+  font-family: 'GBlack', sans-serif;
+  font-size: 0.8rem;
+}
+#pepsilegal>p>span{
+  font-size: 0.4rem;
+}
+#pepsilegal>div>p, #pepsilegal>div>span>p, #pepsilegal>div>span>a{
+  font-size: 0.6rem;
+  color: #004C7A;
+}
+#buttonHome{
+  cursor: pointer !important;
+  display: block;
+  position: absolute;
+  top: 70;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 200px);
+}
+@media (min-width: 960px){
+  #pepsilegal{
+    left: calc(50% - 260px);
+    width: 330px;
+  }
+}
+
+#cupon{
+  background-image: url('ui/img/background-pepsi-legacy.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

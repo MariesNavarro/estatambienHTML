@@ -193,16 +193,17 @@ body{ position:relative }
     <div id="carrusel" class="standarWidth" style="display:block">
       <section id="producto1" class="producto flexDisplay trans7">
         <div class="wrap trans7"></div>
-        <a role="button" id="buttonHome" class="buttonG scaleUpButtonInit">
+        <!-- <a role="button" id="buttonHome" class="buttonG scaleUpButtonInit">
           <img src="ui/img/botoncupon.png" alt="" onclick="changeBack()">
-        </a>
+        </a> -->
+        <a role="button" id="buttonHome" class="safeareaBt scaleUpButtonInit" onclick="changeBack()" ontouchstart="changeBack()"></a>
       </section>
     </div>
     <!-- GENERANDO CUPÓN -->
     <div id="generandocupon" class="standarWidth trans7" style="display:block">
       <section id="loadCoupon1" class="producto flexDisplay">
         <div class="wrap"></div>
-        <div id="counter" class="flexDisplay">
+        <div id="counter" class="flexDisplay" style="opacity:0">
           <svg viewBox="0 0 119.5 119.5"><path id="ccircleB" class="ccircle" d="M7.5,59.75a52.25,52.25 0 1,0 104.5,0a52.25,52.25 0 1,0 -104.5,0"/></svg>
           <svg viewBox="0 0 119.5 119.5"><path id="ccircleW" class="ccircle" d="M7.5,59.75a52.25,52.25 0 1,0 104.5,0a52.25,52.25 0 1,0 -104.5,0"/></svg>
           <p style="color:#fff">0</p>
@@ -285,11 +286,21 @@ body{ position:relative }
       </div>
     </div>
     <!-- FOOTER -->
-    <footer id="footer" class="flexDisplay trans7">
+    <!-- <footer id="footer" class="flexDisplay trans7">
       <p>Haz Ejercicio | </p>
       <a class="flexDisplay trans3" href="terminos-condiciones.html">&nbsp;Consulta Bases, Términos y Condiciones&nbsp;</a>
       <p>| ® Marca Registrada </p>
-    </footer>
+    </footer> -->
+    <div id="pepsilegal">
+      <p>ESTA TAMBIÉN ES TU PEPSI <span>®</span> <img src="ui/img/logo-pepsi-80.svg" width="10"> </p>
+      <div>
+        <p>HAZ EJERCICIO</p>
+        <span class="flexDisplay">
+          <a href="terminos-condiciones.html">CONSULTA BASES, TÉRMINOS Y CONDICIONES.</a>
+          <p>&nbsp;®MARCA REGISTRADA</p>
+        </span>
+      </div>
+    </div>
     <!-- PREVENT LANDSCAPE -->
     <div id="preventLandscape" class="dislplayNone">
       <img src="ui/img/rotate.svg" width="50" height="50">
@@ -306,14 +317,19 @@ body{ position:relative }
       console.log("URLREFERER: <?PHP echo $_SERVER['HTTP_REFERER']; ?>");
       function changeBack(){
         var uno = document.getElementById('generandocupon');
-        var dos = document.getElementById('cupon');
+        // var dos = document.getElementById('cupon');
         var tres = document.getElementsByClassName('mensaje')[0];
-        var cuatro = document.getElementById('guardado');
+        // var cuatro = document.getElementById('guardado');
         uno.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
-        dos.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
+        // dos.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
         tres.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
-        cuatro.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
-        console.log("Cambia back");
+        // cuatro.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
+
+        uno.style.backgroundPosition = "center";
+        // dos.style.backgroundPosition = "center";
+        tres.style.backgroundPosition = "center";
+        // cuatro.style.backgroundPosition = "center";
+
       }
     </script>
   </body>
