@@ -28,7 +28,7 @@ function connect()
   $password_conexion = "#i-SexW_[MBE";
   $link  = new foo_mysqli($hostname_conexion, $username_conexion, $password_conexion, $database_conexion);
   mysqli_set_charset ($link , 'utf8' );
-  mysqli_query($link, 'SET time_zone = "-05:00";');
+  mysqli_query($link, 'SET time_zone = "-06:00";');
   return $link;
 }
 function Close($link)
