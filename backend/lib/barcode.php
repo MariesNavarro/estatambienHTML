@@ -140,29 +140,29 @@ function barcode( $filepath="", $text="0", $size="20", $orientation="horizontal"
 		//imagepng($image,$filepath);
 		//
 		//$stamp = imagecreatefrompng('./img/'.$nombre.'mob.png');
-		$im = imagecreatefrompng('ui/img/promoMob.png');
-		imagealphablending($im, false);
-    imagesavealpha($im,true);
+		$im = imagecreatefromjpeg('ui/img/promoMob.jpg');
+		//imagealphablending($im, false);
+    //imagesavealpha($im,true);
 		$marge_right = 180;
 		$marge_bottom = 210;
 		$sx = imagesx($image);
 		$sy = imagesy($image);
 		imagecopy($im, $image, imagesx($im) - $sx - $marge_right, imagesy($im) - $sy - $marge_bottom, 0, 0, imagesx($image), imagesy($image));
-		$newfilemob='ui/img/temp/promoMob-'.$text.'.png';
-		imagepng($im,$newfilemob);
+		$newfilemob='ui/img/temp/promoMob-'.$text.'.jpg';
+		imagejpeg($im,$newfilemob);
 
 
 		//$stamp = imagecreatefrompng('./img/'.$nombre.'.png');
-		$im2 = imagecreatefrompng('ui/img/promoDesk.png');
-		imagealphablending($im2, false);
-    imagesavealpha($im2,true);
+		$im2 = imagecreatefromjpeg('ui/img/promoDesk.jpg');
+		//imagealphablending($im2, false);
+    //imagesavealpha($im2,true);
 		$marge_right2 = 130;
-		$marge_bottom2 = 95;
+		$marge_bottom2 = 85;
 		$sx2 = imagesx($image);
 		$sy2 = imagesy($image);
 		imagecopy($im2, $image, imagesx($im2) - $sx2 - $marge_right2, imagesy($im2) - $sy2 - $marge_bottom2, 0, 0, imagesx($image), imagesy($image));
-		$newfile='ui/img/temp/promoDesk-'.$text.'.png';
-		imagepng($im2,$newfile);
+		$newfile='ui/img/temp/promoDesk-'.$text.'.jpg';
+		imagejpeg($im2,$newfile);
 		//imagedestroy($im);
 		//return $newfilemob;
 		//header('Content-type: image/phg');

@@ -1577,22 +1577,22 @@ function initFront(){
 
 function handleSizeCoupon(wid){
   if(cB){
-    cupon.style.backgroundImage = "url('ui/img/temp/promoMob-"+interno+".png')";
+    cupon.style.backgroundImage = "url('ui/img/temp/promoMob-"+interno+".jpg')";
   } else if (cB === false && wid < 960) {
-    cupon.style.backgroundImage = "url('ui/img/temp/promoMob-"+interno+".png')";
+    cupon.style.backgroundImage = "url('ui/img/temp/promoMob-"+interno+".jpg')";
   } else if (cB === false && wid >= 960) {
-    cupon.style.backgroundImage = "url('ui/img/temp/promoDesk-"+interno+".png')";
+    cupon.style.backgroundImage = "url('ui/img/temp/promoDesk-"+interno+".jpg')";
   }
 }
 
 function generateCoupon(i){
   interno = i;
   if(cB){
-    cupon.style.backgroundImage = "url('ui/img/temp/promoMob-"+interno+".png')";
+    cupon.style.backgroundImage = "url('ui/img/temp/promoMob-"+interno+".jpg')";
   } else if (!cB && w < 960) {
-    cupon.style.backgroundImage = "url('ui/img/temp/promoMob-"+interno+".png')";
+    cupon.style.backgroundImage = "url('ui/img/temp/promoMob-"+interno+".jpg')";
   } else if (!cB && w >= 960) {
-    cupon.style.backgroundImage = "url('ui/img/temp/promoDesk-"+interno+".png')";
+    cupon.style.backgroundImage = "url('ui/img/temp/promoDesk-"+interno+".jpg')";
   }
 }
 
@@ -1652,16 +1652,16 @@ function loadingCoupon(d){
             generateCoupon(d);
             var arch='';
             if(cB){
-              arch='ui/img/temp/promoMob-'+d+'.png';
+              arch='ui/img/temp/promoMob-'+d+'.jpg';
             } else if (!cB && w < 960) {
-              arch='ui/img/temp/promoMob-'+d+'.png';
+              arch='ui/img/temp/promoMob-'+d+'.jpg';
             } else if (!cB && w >= 960) {
-              arch='ui/img/temp/promoDesk-'+d+'.png';
+              arch='ui/img/temp/promoDesk-'+d+'.jpg';
             }
             toDataURL(arch, function(dataUrl) {
 
                var dow=_("#download");
-               dow.download="cupon.png"
+               dow.download="cupon.jpg"
 
                dow.href=arch;
                dow.target='_blank';
