@@ -107,10 +107,10 @@ function barcode( $filepath="", $text="0", $size="20", $orientation="horizontal"
 
 	if ( strtolower($orientation) == "horizontal" ) {
 		$img_width = ($code_length*$SizeFactor);
-		$img_height = $size*.90;
+		$img_height = $size;
 	} else {
 		$img_width = $size;
-		$img_height = ($code_length*$SizeFactor)*.90;
+		$img_height = ($code_length*$SizeFactor);
 	}
 
 	$image = imagecreate($img_width, ($img_height + $text_height)-50);
