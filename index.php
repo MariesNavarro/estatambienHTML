@@ -331,7 +331,7 @@ body{ position:relative }
       var isrefer="<?PHP echo $_SERVER['HTTP_REFERER']; ?>";
       if(isrefer=="")
        {
-         //window.location.href = "http://facebook.com";
+         //window.location.href = "https://www.facebook.com/178297347303/posts/10155840223457304";
        }
       console.log("URLREFERER: <?PHP echo $_SERVER['HTTP_REFERER']; ?>");
       function changeBack(){
