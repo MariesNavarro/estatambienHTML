@@ -28,7 +28,7 @@
         echo '<nav id="logo" class="flexDisplay trans7" style="opacity: 1;">
           <h1>
             <a href="index.html"> <!-- CAMBIAR!!!!! -->
-              <img src="ui/img/logotipo-gatorade.svg" alt="Gatorade ®" title="Gatorade ®" width="60px">
+                <img src="ui/img/logo-pepsi.svg" class="trans3" alt="Pepsi ®" title="Pepsi ®" width="60px" height="60px">
             </a>
           </h1>
           <p id="stateText"></p>
@@ -76,7 +76,7 @@
       echo '<nav id="menu" class="flexDisplay trans7" style="opacity: 1;">
         <h1>
           <a href="index.php"> <!-- CAMBIAR!!!!! -->
-            <img src="ui/img/logotipo-gatorade.svg" alt="Gatorade ®| Sigue Sudando | Promociones" title="Gatorade ®| Sigue Sudando | Promociones" width="60px">
+              <img src="ui/img/logo-pepsi.svg" class="trans3" alt="Pepsi ®" title="Pepsi ®" width="60px" height="60px">
           </a>
         </h1>
         <p id="stateText"></p>
@@ -102,10 +102,17 @@
             </a>
           </div>
         </div>
-      </div><footer id="footer" class="flexDisplay trans7" style="opacity: 1;">
-        <a class="flexDisplay" href="terminos-condiciones.html" target="_blank">Consulta Bases, Términos y Condiciones</a>
-        <p><span>  |  </span>Hidrátate sanamente | ® Marca Registrada </p>
-      </footer>';
+      </div></footer> -->
+      <div id="pepsilegal">
+        <p>ESTA TAMBIÉN ES TU PEPSI <span>®</span> <img src="ui/img/logo-pepsi-80.svg" width="10"> </p>
+        <div>
+          <p>HAZ EJERCICIO</p>
+          <span class="flexDisplay">
+            <a href="terminos-condiciones.html">CONSULTA BASES, TÉRMINOS Y CONDICIONES.</a>
+            <p>&nbsp;®MARCA REGISTRADA</p>
+          </span>
+        </div>
+      </div>';
     }
   }
 }

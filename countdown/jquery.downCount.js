@@ -80,7 +80,7 @@
                 seconds = (String(seconds).length >= 2) ? seconds : '0' + seconds;
 
             // based on the date change the refrence wording
-            var ref_days = (days === 1) ? 'Dia' : 'Dias',
+            var ref_days = (days === 1) ? 'Día' : 'Días',
                 ref_hours = (hours === 1) ? 'Hora' : 'Horas',
                 ref_minutes = (minutes === 1) ? 'Minuto' : 'Minutos',
                 ref_seconds = (seconds === 1) ? 'Segundo' : 'Segundos';

@@ -6,6 +6,7 @@ body {
 }
 
 #main{
+  position: absolute;
   width: 100vw;
   min-width: 250px;
   height: 100vh;
@@ -15,13 +16,17 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 20px;
   color: #fff;
+  background-image: url('../ui/img/back-solid.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #main>p{
   width: 250px;
   position: absolute;
   text-align: center;
   left: calc(50% - 125px);
-  top: -09%;
+  top: 110px;
 }
 
 ul.countdown {
@@ -50,7 +55,7 @@ ul.countdown li.seperator {
 }
 
 ul.countdown li p {
-    color: black;
+    color: #fff !important;
     font-size: 14px;
 }
 
@@ -87,3 +92,14 @@ ul.countdown li p {
     text-decoration: none;
     opacity: .7;
 }
+@media (max-width: 960px){
+  ul.countdown li span {
+      font-size: 40px;
+
+  }
+
+  ul.countdown li.seperator {
+      font-size: 40px;
+
+  }
+ }
