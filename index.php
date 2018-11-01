@@ -149,7 +149,7 @@ body{ position:relative }
 @keyframes fadeIn{ from{ opacity:0 } to{ opacity:1 } }
 
     </style>
-    <link rel="prefetch" href="ui/img/logo-pepsi.svg">
+    <link rel="prefetch" href="ui/img/logo-pepsi-80.svg">
     <link rel="canonical" href="www.estatambienestupepsi.com">
     <link rel="apple-touch-icon" sizes="180x180" href="ui/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="ui/fav/favicon-32x32.png">
@@ -174,7 +174,7 @@ body{ position:relative }
   <body id="index" class="standarWidth">
     <div id="loading" class="flexDisplay standarWidth trans7">
       <div>
-        <img src="ui/img/logo-pepsi.svg" alt="Logotipo Pepsi ®" width="160" height="160">
+        <img src="ui/img/logo-pepsi-80.svg" alt="Logotipo Pepsi ®" width="160" height="160">
         <div class="loader flexDisplay rot180"> <span></span> <span></span> <span></span> <span></span> <span></span> </div>
         <div class="loader flexDisplay mirror"> <span></span> <span></span> <span></span> <span></span> <span></span> </div>
       </div>
@@ -183,10 +183,10 @@ body{ position:relative }
     <nav id="menu" class="flexDisplay trans7">
       <h1>
         <a href="index.php">
-          <img src="ui/img/logo-pepsi.svg" class="trans3" alt="Pepsi ®" title="Pepsi ®" width="60px" height="60px">
+          <img src="ui/img/logo-pepsi-80.svg" class="trans3" alt="Pepsi ®" title="Pepsi ®" width="60px" height="60px">
         </a>
       </h1>
-      <p id="stateText"></p>
+      <p id="stateText">Cupón Guardado Exitosamente</p>
       <div id="blk" class="flexDisplay" style="background-image:url('ui/img/blank.png')"></div>
     </nav>
     <!-- PRODUCTOS CARRUSEL -->
@@ -264,13 +264,13 @@ body{ position:relative }
     <!-- CUPÓN GUARDADO -->
     <div id="guardado" class="mensaje standarWidth" style="display:none">
       <div class="flexDisplay">
-        <img src="ui/img/logo-pepsi.svg" alt="Logotipo Pepsi ®" width="120" height="120">
-        <p>
+        <img src="ui/img/logo-pepsi-80.svg" alt="Logotipo Pepsi ®" width="120" height="120">
+        <p style="color:#004C7A">
           ¡Tu cupón de Pepsi ha sido guardado exitosamente!
 
         </p>
         <p style="display:block;width:100%;">
-          <span>#EstaTambiénEsTuPepsi<span>®</span></span>
+          <span style="color:#004C7A;font-size:1rem">#EstaTambiénEsTuPepsi<span style="color:#004C7A;font-size:1.5rem">®</span></span>
         </p>
         <div id="social" class="flexDisplay socialWidth">
           <a href="https://www.youtube.com/user/PepsiMexicoOficial" target="_blank">

@@ -23,7 +23,15 @@ nav{
   justify-content: space-between;
   /* opacity: 0; */
 }
-nav>p{ color: #fff; text-transform: uppercase; font-size: 0.7rem; }
+nav>p{
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  width: 100%;
+  text-align: right;
+  height: 40px;
+  line-height: 15px;
+}
 nav>h1{ display: block; }
 nav>h1>a:hover>img{
   -webkit-transform: scale(1.03);
@@ -282,6 +290,9 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
   line-height: 1;
 }
 @media (min-width: 960px){
+  nav>p{
+    text-align: center;
+  }
   .mensaje>div{
     margin-top: 70px;
     height: calc(100% - 115px);
@@ -304,7 +315,9 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
     left: 30px;
     width: calc(100vw - 60px);
   }
-  nav>p{ font-size: 1.3rem; }
+  nav>p{
+    color:#004C7A;
+  }
   nav>h1>a>img{ width: 60px; }
   nav>#blk{ width: 100px; }
   footer{
@@ -363,24 +376,29 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
 #pepsilegal{
   color: #004C7A;
   position: fixed;
-  left: 1vw;
   bottom: 10px;
-  width: 98vw;
+  left: calc(50% - 165px);
+  width: 330px;
   height: 40px;
   z-index: 100;
 }
 #pepsilegal>p{
   display: block;
-  text-align: right;
+  text-align: center;
   font-family: 'GBlack', sans-serif;
   font-size: 0.8rem;
 }
 #pepsilegal>p>span{
+  width: 200px;
   font-size: 0.4rem;
 }
 #pepsilegal>div>p, #pepsilegal>div>span>p, #pepsilegal>div>span>a{
   font-size: 0.6rem;
   color: #004C7A;
+}
+#pepsilegal>div>p{
+  display: block;
+  text-align: center;
 }
 #buttonHome{
   cursor: pointer !important;
@@ -391,14 +409,7 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
   width: 100vw;
   height: calc(100vh - 200px);
 }
-@media (min-width: 960px){
-  #pepsilegal{
-    left: calc(50% - 260px);
-    width: 330px;
-  }
-}
-
-#cupon{
+#cupon, #guardado{
   background-image: url('ui/img/background-pepsi-legacy.jpg');
   background-position: center;
   background-size: cover;
