@@ -1668,7 +1668,7 @@ function loadingCoupon(d){
     'purchase': {
       'actionField': {
         'step'   : 3,
-        'site'   : 'estatambienestupepsi.com'
+        'site'   : 'estatambienestupepsi.com',
         'id'     : codigo	,			<!-- Id de Regitro único en el sistema -->
         'coupon' : d 				<!-- Id de Cupón Generado -->
       },
