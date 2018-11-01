@@ -147,7 +147,6 @@ body{ position:relative }
 @-ms-keyframes fadeIn{ from{ opacity:0 } to{ opacity:1 } }
 @-o-keyframes fadeIn{ from{ opacity:0 } to{ opacity:1 } }
 @keyframes fadeIn{ from{ opacity:0 } to{ opacity:1 } }
-
     </style>
     <link rel="prefetch" href="ui/img/logo-pepsi-80.svg">
     <link rel="canonical" href="www.estatambienestupepsi.com">
@@ -186,7 +185,7 @@ body{ position:relative }
           <img src="ui/img/logo-pepsi-80.svg" class="trans3" alt="Pepsi ®" title="Pepsi ®" width="60px" height="60px">
         </a>
       </h1>
-      <p id="stateText">Cupón Guardado Exitosamente</p>
+      <p id="stateText"></p>
       <div id="blk" class="flexDisplay" style="background-image:url('ui/img/blank.png')"></div>
     </nav>
     <!-- PRODUCTOS CARRUSEL -->
