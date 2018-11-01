@@ -1593,7 +1593,7 @@ function handleSizeCoupon(wid){
   } else if (cB === false && wid < 960) {
     cupon.style.backgroundImage = "url('ui/img/temp/promoMob-"+interno+".jpg')";
   } else if (cB === false && wid >= 960) {
-    cupon.style.backgroundImage = "url('ui/img/temp/promoDesk-"+interno+".jpg')";
+    cupon.style.backgroundImage = "url('ui/img/temp/promoMob-"+interno+".jpg')";
   }
 }
 
@@ -1604,7 +1604,7 @@ function generateCoupon(i){
   } else if (!cB && w < 960) {
     cupon.style.backgroundImage = "url('ui/img/temp/promoMob-"+interno+".jpg')";
   } else if (!cB && w >= 960) {
-    cupon.style.backgroundImage = "url('ui/img/temp/promoDesk-"+interno+".jpg')";
+    cupon.style.backgroundImage = "url('ui/img/temp/promoMob-"+interno+".jpg')";
   }
 }
 

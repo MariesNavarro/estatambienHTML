@@ -31,7 +31,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="google" content="notranslate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=1.0000, user-scalable=no">
-    <title>Esta También Es Tu Pepsi | Pepsi México ®</title>
+    <title>Esta También Es Tu Pepsi | Pepsi México</title>
     <style>
     *a,body{
 color:#FFF
@@ -179,7 +179,7 @@ body{ position:relative }
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="ui/fav/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <meta name="description" content="El lugar perfecto para encontrar las mejores promociones de toda la línea de Gatorade ®">
+    <meta name="description" content="El lugar perfecto para encontrar las mejores promociones de toda la línea de Pepsi">
     <meta name="keywords" content="Sigue Sudando, Hidratación, Hidratar, Ejercicio, Electrolitos, Energía, Gatorade, Promoción, Deporte, Football Energy, OXXO">
     <script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
     <script async src="analytics/gtag.min.js"></script>
@@ -193,7 +193,7 @@ body{ position:relative }
   <body id="index" class="standarWidth">
     <div id="loading" class="flexDisplay standarWidth trans7">
       <div>
-        <img src="ui/img/logo-pepsi-80.svg" alt="Logotipo Pepsi ®" width="160" height="160">
+        <img src="ui/img/logo-pepsi-80.svg" alt="Logotipo Pepsi" width="160" height="160">
         <div class="loader flexDisplay rot180"> <span></span> <span></span> <span></span> <span></span> <span></span> </div>
         <div class="loader flexDisplay mirror"> <span></span> <span></span> <span></span> <span></span> <span></span> </div>
       </div>
@@ -289,7 +289,7 @@ body{ position:relative }
 
         </p>
         <p style="display:block;width:100%;">
-          <span style="color:#004C7A;font-size:1rem">#EstaTambiénEsTuPepsi<span style="color:#004C7A;font-size:1.5rem">®</span></span>
+          <span style="color:#004C7A;font-size:1rem">#EstaTambiénEsTuPepsi</span>
         </p>
         <div id="social" class="flexDisplay socialWidth">
           <a href="https://www.youtube.com/user/PepsiMexicoOficial" target="_blank">
@@ -311,7 +311,7 @@ body{ position:relative }
       <p>| ® Marca Registrada </p>
     </footer> -->
     <div id="pepsilegal">
-      <p>ESTA TAMBIÉN ES TU PEPSI <span>®</span> <img src="ui/img/logo-pepsi-80.svg" width="10"> </p>
+      <p>ESTA TAMBIÉN ES TU PEPSI <img src="ui/img/logo-pepsi-80.svg" width="10"> </p>
       <div>
         <p>HAZ EJERCICIO</p>
         <span class="flexDisplay">
@@ -335,18 +335,18 @@ body{ position:relative }
        }
       console.log("URLREFERER: <?PHP echo $_SERVER['HTTP_REFERER']; ?>");
       function changeBack(){
-        var uno = document.getElementById('generandocupon');
+        // var uno = document.getElementById('generandocupon');
         // var dos = document.getElementById('cupon');
-        var tres = document.getElementsByClassName('mensaje')[0];
+        // var tres = document.getElementsByClassName('mensaje')[0];
         // var cuatro = document.getElementById('guardado');
-        uno.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
+        // uno.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
         // dos.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
-        tres.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
+        // tres.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
         // cuatro.style.backgroundImage = "url('ui/img/background-pepsi-legacy.jpg')";
 
-        uno.style.backgroundPosition = "center";
+        // uno.style.backgroundPosition = "center";
         // dos.style.backgroundPosition = "center";
-        tres.style.backgroundPosition = "center";
+        // tres.style.backgroundPosition = "center";
         // cuatro.style.backgroundPosition = "center";
 
       }

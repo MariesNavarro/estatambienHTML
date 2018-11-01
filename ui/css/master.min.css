@@ -28,7 +28,7 @@ nav>p{
   text-transform: uppercase;
   font-size: 0.7rem;
   width: 100%;
-  text-align: right;
+  text-align: center;
   height: 40px;
   line-height: 15px;
 }
@@ -386,7 +386,7 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
   display: block;
   text-align: center;
   font-family: 'GBlack', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 #pepsilegal>p>span{
   width: 200px;
@@ -410,8 +410,9 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
   height: calc(100vh - 200px);
 }
 #cupon, #guardado{
-  background-image: url('ui/img/background-pepsi-legacy.jpg');
+  /* background-image: url('ui/img/background-pepsi-legacy.jpg');
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+  background: #fff;
 }
