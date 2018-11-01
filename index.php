@@ -5,7 +5,27 @@ Esta También Es Tu Pepsi v1
 -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
+    <script>
+    dataLayer = [{
+    'event': 'checkout',
+    'ecommerce': {
+        'checkout': {
+            'actionField': {
+                'step': 1,
+                'page': 'Home',
+                'site': 'estatambienestupepsi.com'
+            }
+        }
+    }
+}];
+    </script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TGSLCWS');</script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

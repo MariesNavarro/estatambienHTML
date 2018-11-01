@@ -1531,6 +1531,18 @@ function initFront(){
     el[0].setAttribute("class", " ");
   }
   function lauchCoupon(){
+    dataLayer.push({
+    'event': 'checkout',
+    'ecommerce': {
+      'checkout': {
+        'actionField': {
+        	'step': 2,
+            'page': 'Obtener Cupon',
+            'site': 'estatambienestupepsi.com'
+    	},
+     }
+    }
+});
     var tx = _('#stateText').innerHTML = "Cargando Cupón...";
     var carrusel = _('#carrusel').style.display = "none";
     var loadCoupon1 = _("#loadCoupon1>.wrap").style.opacity = "1";
@@ -1650,6 +1662,19 @@ function loadingCoupon(d){
           }
           else {
             generateCoupon(d);
+            dataLayer.push({
+  'event': 'purchase',
+  'ecommerce': {
+    'purchase': {
+      'actionField': {
+        'step'   : 3,
+        'site'   : 'estatambienestupepsi.com'
+        'id'     : codigo	,			<!-- Id de Regitro único en el sistema -->
+        'coupon' : d 				<!-- Id de Cupón Generado -->
+      },
+    }
+  },
+});
             var arch='';
             if(cB){
               arch='ui/img/temp/promoMob-'+d+'.jpg';
@@ -1691,6 +1716,18 @@ function savedCoupon(){
   var guardado = _("#guardado").style.display = "block";
   var tx = _('#stateText').innerHTML = "Cupón Guardado Exitosamente";
   var blk = _('#blk').style.backgroundImage = "url('ui/img/blank.png')";
+  dataLayer.push = ({
+    'event': 'guardar',
+    'ecommerce': {
+        'checkout': {
+            'actionField': {
+                'step': 4,
+                'site': 'estatambienestupepsi.com',
+                'page': 'Imprimir Cupon',
+            }
+        }
+    }
+});
 }
 window.onorientationchange = function(){
   var wr = _('#preventLandscape');
