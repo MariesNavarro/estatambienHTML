@@ -16,7 +16,7 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   font-size: 20px;
   color: #fff;
-  background-image: url('../ui/img/back-solid.jpg');
+  background-image: url('../ui/img/back-solid.jpg') !important;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

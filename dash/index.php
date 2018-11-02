@@ -31,14 +31,14 @@ Esta También Es Tu Pepsi v1
   </head>
   <body id="index" class="standarWidth">
     <!-- MENU -->
-    <nav id="logo" class="flexDisplay trans7" style="opacity: 1;">
-      <h1>
-        <a href="../index.php">
-          <img src="../ui/img/logo-pepsi.svg" alt="PEPSI ®" title="PEPSI ®" width="60px">
-        </a>
-      </h1>
-      <p id="stateText"></p>
-      <div id="blk"></div>
+    <nav id="menu" class="flexDisplay trans7">
+           <h1 id="pepsilogopatch">
+             <a href="index.php">
+               <img src="../ui/img/logo-pepsi-80.svg" class="trans3" alt="Pepsi ®" title="Pepsi ®" width="60px" height="60px">
+             </a>
+           </h1>
+           <p id="stateText"></p>
+           <div id="blk" class="flexDisplay" style="background-image:url("ui/img/blank.png")"></div>
     </nav>
 
     <!-- LOADING -->

@@ -25,16 +25,15 @@
     {
       //echo $val[0].' '.$cads[0];
       if ($val[0]<0.000001) {  // no ha comenzado
-        echo '<nav id="logo" class="flexDisplay trans7" style="opacity: 1;">
-          <h1>
-            <a href="index.html"> <!-- CAMBIAR!!!!! -->
-                <img src="ui/img/logo-pepsi.svg" class="trans3" alt="Pepsi ®" title="Pepsi ®" width="60px" height="60px">
-            </a>
-          </h1>
-          <p id="stateText"></p>
-          <div id="blk"></div>
-        </nav>
-
+        echo '<nav id="menu" class="flexDisplay trans7">
+           <h1 id="pepsilogopatch">
+             <a href="index.php">
+               <img src="ui/img/logo-pepsi-80.svg" class="trans3" alt="Pepsi ®" title="Pepsi ®" width="60px" height="60px">
+             </a>
+           </h1>
+           <p id="stateText"></p>
+           <div id="blk" class="flexDisplay" style="background-image:url("ui/img/blank.png")"></div>
+         </nav>
         <div id="main">
           <p>La promoción comienza en</p>
           <ul class="countdown">
@@ -73,15 +72,15 @@
 
       }
       else {  // ya finalizo
-      echo '<nav id="menu" class="flexDisplay trans7" style="opacity: 1;">
-        <h1>
-          <a href="index.php"> <!-- CAMBIAR!!!!! -->
-              <img src="ui/img/logo-pepsi.svg" class="trans3" alt="Pepsi ®" title="Pepsi ®" width="60px" height="60px">
-          </a>
-        </h1>
-        <p id="stateText"></p>
-        <div id="blk"></div>
-      </nav>
+      echo '<nav id="menu" class="flexDisplay trans7">
+           <h1 id="pepsilogopatch">
+             <a href="index.php">
+               <img src="ui/img/logo-pepsi-80.svg" class="trans3" alt="Pepsi ®" title="Pepsi ®" width="60px" height="60px">
+             </a>
+           </h1>
+           <p id="stateText"></p>
+           <div id="blk" class="flexDisplay" style="background-image:url("ui/img/blank.png")"></div>
+         </nav>
       <div id="horasDiv" class="mensaje standarWidth" style="display:block">
         <div class="flexDisplay">
           <p>

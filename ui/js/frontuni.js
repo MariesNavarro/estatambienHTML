@@ -1687,7 +1687,7 @@ function loadingCoupon(d){
             } else if (!cB && w < 960) {
               arch='ui/img/temp/promoMob-'+d+'.jpg';
             } else if (!cB && w >= 960) {
-              arch='ui/img/temp/promoDesk-'+d+'.jpg';
+              arch='ui/img/temp/promoMob-'+d+'.jpg';
             }
             toDataURL(arch, function(dataUrl) {
 

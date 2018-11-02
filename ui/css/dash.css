@@ -2,7 +2,7 @@
 @font-face { font-family: 'SFPBold'; src: url('../fonts/sfp-bold.eot'); src: url('../fonts/sfp-bold?#iefix') format('embedded-opentype'), url('../fonts/sfp-bold.woff2') format('woff2'), url('../fonts/sfp-bold.woff') format('woff'), url('../fonts/sfp-bold.ttf') format('truetype'); font-weight: bold; font-style: normal; }
 @font-face { font-family: 'SFPBlack'; src: url('../fonts/sfp-black.eot'); src: url('../fonts/sfp-black?#iefix') format('embedded-opentype'), url('../fonts/sfp-black.woff2') format('woff2'), url('../fonts/sfp-black.woff') format('woff'), url('../fonts/sfp-black.ttf') format('truetype'); font-weight: bold; font-style: normal; }
 body{
-  background-image: url('../img/background-pepsi-legacy.jpg');
+  background-image: url('../img/back-solid.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
