@@ -290,6 +290,17 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
   line-height: 1;
 }
 @media (min-width: 960px){
+  #pepsilegalmovil{ display: none;}
+  #pepsilegal{ display: block; }
+  #pepsilegal>div>p{
+    text-align: center;
+  }
+  #pepsilegal>p{
+    opacity: 1 !important;
+  }
+  #pepsilegal>div>span>p{
+    opacity: 1 !important;
+  }
   nav>p{
     text-align: center;
   }
@@ -371,12 +382,25 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
   align-items: center;
 }
 #preventLandscape>p{ margin: 10px auto; }
-
-
+#pepsilegalmovil{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display:flex;
+  position: fixed;
+  bottom: 15px;
+  width: 90vw;
+  left: 5vw;
+  z-index: 100;
+}
+#pepsilegalmovil>p, #pepsilegalmovil>a{
+  color: #004C7A;
+  font-size: 0.4rem; }
 #pepsilegal{
+  display: none;
   color: #004C7A;
   position: fixed;
-  bottom: 10px;
+  bottom: 5px;
   left: calc(50% - 165px);
   width: 330px;
   height: 40px;
@@ -387,6 +411,7 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
   text-align: center;
   font-family: 'GBlack', sans-serif;
   font-size: 0.6rem;
+  opacity: 0;
 }
 #pepsilegal>p>span{
   width: 200px;
@@ -396,9 +421,12 @@ nav>p{ text-transform: uppercase; font-size: 0.7rem; }
   font-size: 0.6rem;
   color: #004C7A;
 }
+#pepsilegal>div>span>p{
+  opacity: 0;
+}
 #pepsilegal>div>p{
   display: block;
-  text-align: center;
+  text-align: left;
 }
 #buttonHome{
   cursor: pointer !important;

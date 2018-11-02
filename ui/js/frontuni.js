@@ -1433,8 +1433,8 @@ var cupon = _("#cupon1"),
     cB = false,
     w = window.innerWidth,
     aRestar = 50,
-    wrSocial = __('.socialWidth'),
-    btSocial = __('.whatsapp');
+    wrSocial = __('.socialWidth');
+    // btSocial = __('.whatsapp');
 function initFront(){
   var blk = _('#blk').style.backgroundImage = "url('ui/img/blank.png')";
   var fps = 12,
@@ -1447,11 +1447,11 @@ function initFront(){
     if(bowser.mobile || bowser.tablet || /SymbianOS/.test(window.navigator.userAgent)) cB = true;
     if(cB){
       for (var i = 0; i < wrSocial.length; i++) {
-        wrSocial[i].style.width = "170px";
+        // wrSocial[i].style.width = "170px";
       }
-      for (var i = 0; i < btSocial.length; i++) {
-        btSocial[i].style.display = "block";
-      }
+      // for (var i = 0; i < btSocial.length; i++) {
+      //   btSocial[i].style.display = "block";
+      // }
       fixHeight();
       buttonHome.addEventListener("touchstart", lauchCoupon);
       loadingSeq("ui/img/seqHome/mob-", ".jpg", 29, "home");
@@ -1609,6 +1609,12 @@ function generateCoupon(i){
 }
 
 
+function logoPepsiOpacity(){
+  var pepsilogopatch =  document.getElementById('pepsilogopatch');
+  pepsilogopatch.style.opacity = "0";
+}
+
+
 
 function horasDisplay(c){
   var wr = _("#horasDiv");
@@ -1712,6 +1718,7 @@ function displayCoupon(){
 }
 
 function savedCoupon(){
+  logoPepsiOpacity();
   var cupon = _("#cupon").style.display = "none";
   var guardado = _("#guardado").style.display = "block";
   var tx = _('#stateText').innerHTML = "Cupón Guardado Exitosamente";

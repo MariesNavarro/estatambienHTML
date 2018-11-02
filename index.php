@@ -200,7 +200,7 @@ body{ position:relative }
     </div>
     <!-- MENU -->
     <nav id="menu" class="flexDisplay trans7">
-      <h1>
+      <h1 id="pepsilogopatch">
         <a href="index.php">
           <img src="ui/img/logo-pepsi-80.svg" class="trans3" alt="Pepsi ®" title="Pepsi ®" width="60px" height="60px">
         </a>
@@ -292,15 +292,15 @@ body{ position:relative }
           <span style="color:#004C7A;font-size:1rem">#EstaTambiénEsTuPepsi</span>
         </p>
         <div id="social" class="flexDisplay socialWidth">
-          <a href="https://www.youtube.com/user/PepsiMexicoOficial" target="_blank">
+          <a href="https://es-la.facebook.com/pepsimexico/" target="_blank">
             <img src="ui/img/social/fb.svg" width="50" height="50">
           </a>
-          <a href="https://twitter.com/PepsiMEX" target="_blank">
+          <a href="https://www.instagram.com/pepsimex/" target="_blank">
             <img src="ui/img/social/ig.svg" width="50" height="50">
           </a>
-          <a class="whatsapp" href="whatsapp://send?text=https://siguesudando.com" data-action="share/whatsapp/share" style="display:none">
+          <!-- <a class="whatsapp" style="opacity:0">
             <img src="ui/img/social/wspp.svg" width="50" height="50">
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -315,10 +315,14 @@ body{ position:relative }
       <div>
         <p>HAZ EJERCICIO</p>
         <span class="flexDisplay">
-          <a href="terminos-condiciones.html">CONSULTA BASES, TÉRMINOS Y CONDICIONES.</a>
+          <a href="terminos-condiciones.html"> CONSULTA BASES, TÉRMINOS Y CONDICIONES.</a>
           <p>&nbsp;®MARCA REGISTRADA</p>
         </span>
       </div>
+    </div>
+
+    <div id="pepsilegalmovil">
+      <p>HAZ EJERCICIO.&nbsp;&nbsp;</p> <a href="terminos-condiciones.html"> CONSULTA BASES, TÉRMINOS Y CONDICIONES.</a>
     </div>
     <!-- PREVENT LANDSCAPE -->
     <div id="preventLandscape" class="dislplayNone">
