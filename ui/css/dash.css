@@ -98,7 +98,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  width: 90vw;
+  width: 100vw;
   min-width: 250px;
   height: 100%;
   overflow-y: scroll;
@@ -174,10 +174,7 @@ footer{
   #disclaimer>div{ width: 400px; }
   #disclaimer>div>header>h2{font-size: 1.6rem; }
   #disclaimer>div>header>h1{ font-size: 2rem; }
-  #wrapDatos{
-    top: 10vh;
-    left: 5vw;
-  }
+  #wrapDatos{ top: 10vh; }
   #disclaimer>div>img{ margin: 50px auto 10px auto; }
   #Consolidados>h1{
     margin-top: 0;
@@ -190,8 +187,40 @@ footer{
     display: flex;
   }
 }
-
-
+#landscapeDash{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #174895;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  z-index: 5000;
+  color: #fff;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+}
+.displayLand{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.noDisplayLand{
+  display: none;
+}
 @-webkit-keyframes openError { 0%{ opacity: 0; height: 0;} 50%{  height: 30px;} 100%{opacity:1; height: 30px; } }
 @-moz-keyframes openError { 0%{ opacity: 0; height: 0;} 50%{  height: 30px;} 100%{opacity:1; height: 30px; } }
 @-ms-keyframes openError { 0%{ opacity: 0; height: 0;} 50%{  height: 30px;} 100%{opacity:1; height: 30px; } }

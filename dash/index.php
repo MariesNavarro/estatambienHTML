@@ -11,7 +11,7 @@ Esta También Es Tu Pepsi v1
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="google" content="notranslate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0000, minimum-scale=1.0000, maximum-scale=1.0000, user-scalable=no">
-    <title>Dashboard | Esta También Es Tu Pepsi | Pepsi México ®</title>
+    <title>Dashboard | Esta También Es Tu Pepsi | Pepsi México</title>
     <link rel="stylesheet" href="../ui/css/master.css">
     <link rel="stylesheet" href="../ui/css/dash.css">
     <link rel="canonical" href="www.estatambienestupepsi.com">
@@ -31,7 +31,7 @@ Esta También Es Tu Pepsi v1
   </head>
   <body id="index" class="standarWidth">
     <!-- MENU -->
-    <nav id="menu" class="flexDisplay trans7">
+    <nav id="menu" class="flexDisplay trans7" style="top:0">
            <h1 id="pepsilogopatch">
              <a href="index.php">
                <img src="../ui/img/logo-pepsi-80.svg" class="trans3" alt="Pepsi ®" title="Pepsi ®" width="60px" height="60px">
@@ -44,18 +44,26 @@ Esta También Es Tu Pepsi v1
     <!-- LOADING -->
     <div id="loading" class="flexDisplay standarWidth trans7"></div>
 
+    <div id="landscapeDash" class="noDisplayLand">
+      <img src="../ui/img/rotate.svg" width="50" height="50">
+      <p>Por favor gira tu teléfono</p>
+    </div>
     <!-- FOOTER -->
-    <footer id="footer" style="opacity: 1;">
+    <!-- <footer id="footer" style="opacity: 1;">
       <a href="../terminos-condiciones.html" target="_blank">Consulta Bases, Términos y Condiciones</a>
       <p><span>  |  </span>Hidrátate sanamente | ® Marca Registrada </p>
-    </footer>
-
-    <!-- SCRIPT -->
-    <script src="ui/js/bowser.min.js" charset="utf-8"></script>
-    <script src="ui/js/front.js" charset="utf-8"></script>
+    </footer> -->
     <script>
       window.onload = function(){
           salir();
+      }
+      window.onorientationchange = function(){
+        var wr = document.getElementById('landscapeDash');
+        if(window.orientation == 90 || window.orientation == -90){
+          wr.setAttribute("class", "displayLand");
+        } else {
+          wr.setAttribute("class", "noDisplayLand");
+        }
       }
     </script>
   </body>
