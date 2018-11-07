@@ -46,13 +46,13 @@ function actualizadiv(){
     url  : 'respuesta.php',
     data:  dataString,
     success:function(data) {
-      //console.log(data);
       $('#loading').html(data).fadeIn();
       if (param3==1 && data.indexOf("incorrecta")==-1) {
-       console.log('height 30vh');
-       $('#loading').css("height", "30vh");
+       console.log('not apply height 30vh');
+       $('#loading').css("background", "#fff");
      } else {
-       $('#loading').css("height", "100vh");
+       $('#loading').css("background", "transparent");
+       console.log('not apply height 100vh');
      }
     }
   });

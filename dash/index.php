@@ -42,7 +42,7 @@ Esta También Es Tu Pepsi v1
     </nav>
 
     <!-- LOADING -->
-    <div id="loading" class="flexDisplay standarWidth trans7"></div>
+    <div id="loading" class="flexDisplay trans7"></div>
 
     <div id="landscapeDash" class="noDisplayLand">
       <img src="../ui/img/rotate.svg" width="50" height="50">

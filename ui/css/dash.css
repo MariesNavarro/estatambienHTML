@@ -8,6 +8,14 @@ body{
   background-size: cover;
   height: 100vh;
 }
+#loading{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
 #loading>.error{
   position: absolute;
   top: 0;
@@ -54,7 +62,7 @@ body{
   font-family: 'SFPRegular', sans-serif;
 }
 #disclaimer>div>header>h1{
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-family: 'SFPBold', sans-serif;
 }
 #disclaimer>div>img{ margin: 0; }
@@ -80,7 +88,7 @@ body{
   text-transform: uppercase;
   cursor: pointer;
   display: block;
-  margin: 20px auto;
+  margin: 5px auto;
   width: 120px;
   line-height: 40px;
   background: #184895;
@@ -103,20 +111,18 @@ body{
   height: 100%;
   overflow-y: scroll;
   background: #fff;
-  padding: 20px;
+  border-top: 60px solid #fff;
 }
 #Consolidados{
   color: #184895;
-  height: calc(100% - 100px);
   width: 100%;
   text-align: center;
 }
 #Consolidados>h1{
-  font-size: 1.1rem;
+  font-size: 0.8rem;
   margin-top: 30px;
   font-family: 'SFPBold', sans-serif;
 }
-
 #Consolidados>h1,#Consolidados>h2, #Consolidados>h3, #Consolidados>h4{
   display: inline-block;
   margin: 0 !important;
@@ -124,20 +130,20 @@ body{
   width: 100%;
 }
 #Consolidados>h3{
-  font-size: 4rem;
+  font-size: 1.5rem;
   font-family: 'SFPBold', sans-serif;
 }
 #Consolidados>h4{
   color: #2368D7;
 }
 #lineapunteada{
-  display: block;
+  /* display: block;
   width: 100%;
   height: 1px;
   background-image: url('../img/punteada.svg');
   background-repeat: repeat-y;
   background-size: cover;
-  margin-bottom: 10px;
+  margin-bottom: 10px; */
 }
 #interface{
   position: relative;
@@ -148,10 +154,15 @@ body{
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
--moz-justify-content: space-between;
--ms-justify-content: space-between;
--o-justify-content: space-between;
-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 #interface>a{
   border: 2px solid transparent;
@@ -171,10 +182,23 @@ footer{
   width: 100vw;
 }
 @media (min-width: 860px){
+  #loading{
+    width: calc(100vw - 30px);
+    height: calc(100vh - 30px);
+    top: 15px;
+    left: 15px;
+  }
+  #Consolidados{ height: calc(100% - 100px); }
+  #Consolidados>h1{ font-size: 1.1rem; }
+  #Consolidados>h3{ font-size: 4rem; }
   #disclaimer>div{ width: 400px; }
   #disclaimer>div>header>h2{font-size: 1.6rem; }
   #disclaimer>div>header>h1{ font-size: 2rem; }
-  #wrapDatos{ top: 10vh; }
+  #wrapDatos{
+    border:0;
+    background: transparent;
+    top: 10vh;
+  }
   #disclaimer>div>img{ margin: 50px auto 10px auto; }
   #Consolidados>h1{
     margin-top: 0;
@@ -185,6 +209,16 @@ footer{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+  }
+  #interface{
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+  }
+  #interface>a{
+    margin: 5px auto;
   }
 }
 #landscapeDash{
